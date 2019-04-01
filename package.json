@@ -1,0 +1,13 @@
+{
+    "name": "calc-app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Mohamed Elbaz",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "json:server": "json-server mock_db/database.json",
+      "server:setup": "cd server && yarn",
+      "dev:server": "env-cmd ./server/.env nodemon server/index.js"
+    }
+  }
