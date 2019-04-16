@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "firstName": "Mohamad",
+      "lastName": "albaz",
+      "email": "ahmad@example.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "Kamel",
+      "email": "ahmad@example.com",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "labs": [
+    {
+      "name": "askar",
+      "id": 1
+    },
+    {
+      "name": "baz",
+      "id": 2
+    }
+  ]
+}

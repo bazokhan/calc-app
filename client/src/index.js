@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker'
 import { ApolloProvider } from 'react-apollo'
 import { HttpLink, ApolloClient, InMemoryCache } from 'apollo-client-preset'
 
-const gqlServerLink = new HttpLink({ uri: process.env.SERVER })
+const gqlServerLink = new HttpLink({ uri: 'http://localhost:4000' })
 
 const client = new ApolloClient({
   link: gqlServerLink,

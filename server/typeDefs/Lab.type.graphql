@@ -1,0 +1,15 @@
+type Lab {
+    id: ID!
+    name: String!
+}
+
+type Query {
+    labs: [User!]!
+    lab(id: ID!): User
+}
+
+type Mutation {
+    addLab(name: String!): Lab
+    editLab(id: ID!, name:String): Lab
+    removeLab(id: ID!): Lab
+}

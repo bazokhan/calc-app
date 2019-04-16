@@ -1,44 +1,50 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
 import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { Query } from 'react-apollo'
+import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom'
+import { Home, Labs } from './pages'
 
-const USERS_QUERY = gql`
-  query users {
-    id
-    name
-  }
-`
+// const USERS_QUERY = gql`
+//   query {
+//     users {
+//       id
+//       firstName
+//       email
+//       password
+//     }
+//   }
+// `
 
-class App extends Component {
-  render() {
-    // TODO:
-    if (this.props.data.loading) {
-      return <div>Loading</div>
-    }
+// const App = () => {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <p>Hello World</p>
+//       </header>
 
-    return (
-      <div className="App">
-        <header className="App-header">
-          <p>Hello World</p>
-        </header>
+//       <div className="App-intro">
+//         <Query query={USERS_QUERY}>
+//           {({ data }) => {
+//             if (!data) return <div>Loading..</div>
+//             console.log(data)
+//             return <div>Loaded !</div>
+//           }}
+//         </Query>
+//       </div>
+//     </div>
+//   )
+// }
 
-        {/* TODO */}
-        <div className="App-intro">
-          <ul>
-            {this.props.data.users &&
-              this.props.data.users.map((user, index) => {
-                return (
-                  <li key={index}>
-                    {user.name}
-                  </li>
-                )
-              })}
-          </ul>
-        </div>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <Router>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/labs">Labs</NavLink>
+      <Route exact path="/" component={Home} />
+      <Route path="/labs" component={Labs} />
+    </Router>
+  )
 }
 
-export default graphql(USERS_QUERY)(App)
+export default App
