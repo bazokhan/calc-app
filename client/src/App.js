@@ -4,6 +4,7 @@ import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom'
 import { Home, Labs } from './pages'
+import {SuccessPage, ErrorPage} from './pages/common'
 
 // const USERS_QUERY = gql`
 //   query {
@@ -43,6 +44,8 @@ const App = () => {
       <NavLink to="/labs">Labs</NavLink>
       <Route exact path="/" component={Home} />
       <Route path="/labs" component={Labs} />
+      <Route path="/success" component={SuccessPage} />
+      <Route path="/error" component={ErrorPage} />
     </Router>
   )
 }

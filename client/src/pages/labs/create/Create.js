@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
 import { Mutation } from 'react-apollo'
 import createLab from './createLab.gql'
+import { Redirect } from 'react-router-dom'
 
 const Create = () => {
   const [name, setName] = useState('')
   let nameInput
   return (
     <Mutation mutation={createLab}>
-      {(addLab, { data }) => {
+      {(addLab, { data, error }) => {
+        if (error) {
+          return <Redirect to={{ pathname: '/error', state: { error, parent: '/labs' } }} />
+        }
+        if (data && data.addLab) {
+          return <Redirect to={{ pathname: '/success', state: { name: data.addLab.name + ' Lab', parent: '/labs' } }} />
+        }
         return (
           <form
             onSubmit={e => {
@@ -19,7 +26,6 @@ const Create = () => {
             <input
               type="text"
               placeholder="Lab Name"
-            //   value={name}
               ref={node => {
                 nameInput = node
               }}
