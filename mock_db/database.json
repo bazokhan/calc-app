@@ -17,7 +17,7 @@
   ],
   "labs": [
     {
-      "name": "askar",
+      "name": "FirstLab",
       "id": 1
     },
     {
@@ -71,6 +71,14 @@
     {
       "name": "sfdscgfdf",
       "id": 14
+    },
+    {
+      "name": "asdfs",
+      "id": 15
+    },
+    {
+      "name": "sixteenth",
+      "id": 16
     }
   ]
 }

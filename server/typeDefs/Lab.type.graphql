@@ -4,8 +4,8 @@ type Lab {
 }
 
 type Query {
-    labs: [User!]!
-    lab(id: ID!): User
+    labs: [Lab!]!
+    lab(id: ID!): Lab
 }
 
 type Mutation {
