@@ -4,6 +4,8 @@ import patchLab from './patchLab.gql'
 import { Redirect } from 'react-router-dom'
 import getLab from '../lab/getLab.gql'
 
+import {Button} from 'layout'
+
 const Edit = ({ match }) => {
     const { id } = match.params
     const [name, setName] = useState('')
@@ -42,7 +44,7 @@ const Edit = ({ match }) => {
                                     setName(e.target.value)
                                 }}
                             />
-                            <button type="submit">Edit</button>
+                            <Button type="submit">Edit</Button>
                         </form>
                     </div>
                 )

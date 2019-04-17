@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {Button} from 'layout'
 
 const SuccessPage = ({ location, history }) => {
     if (!location || !location.state) {
         return <div>
             <div>Success</div>
-            <button onClick={history.goBack}>Go Back</button>
+            <Button onClick={history.goBack}>Go Back</Button>
             <NavLink to="/">Go Home</NavLink>
         </div>
     }

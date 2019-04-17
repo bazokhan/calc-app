@@ -9,7 +9,7 @@ const List = () => {
             {({ data }) => {
                 if (!data || !data.labs) return <div>Loading...</div>
                 return data.labs.map(lab => {
-                    return (<div key={lab.id}><div>{lab.id}: {lab.name}</div><NavLink to={`/labs/${lab.id}`}>Edit</NavLink></div>)
+                    return (<div key={lab.id}><div>{lab.id}: {lab.name}</div><NavLink to={`/labs/${lab.id}`}>Details</NavLink></div>)
                 })
             }}
         </Query>

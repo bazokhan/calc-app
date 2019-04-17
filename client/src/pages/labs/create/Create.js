@@ -3,6 +3,8 @@ import { Mutation } from 'react-apollo'
 import createLab from './createLab.gql'
 import { Redirect } from 'react-router-dom'
 
+import {Button, Input} from 'layout'
+
 const Create = () => {
   const [name, setName] = useState('')
   let nameInput
@@ -23,7 +25,7 @@ const Create = () => {
               nameInput.value = ''
             }}
           >
-            <input
+            <Input
               type="text"
               placeholder="Lab Name"
               ref={node => {
@@ -33,7 +35,7 @@ const Create = () => {
                 setName(e.target.value)
               }}
             />
-            <button type="submit">Create</button>
+            <Button type="submit">Create</Button>
           </form>
         )
       }}
