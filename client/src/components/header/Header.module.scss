@@ -1,0 +1,9 @@
+@import 'layout/variables.scss';
+
+.headerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $medium-padding;
+    background-color: $gray;
+}

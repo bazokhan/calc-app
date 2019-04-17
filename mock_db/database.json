@@ -17,7 +17,7 @@
   ],
   "labs": [
     {
-      "name": "FirstLab",
+      "name": "ASKOR",
       "id": 1
     },
     {
@@ -29,7 +29,7 @@
       "id": 3
     },
     {
-      "name": "",
+      "name": "NewName",
       "id": 4
     },
     {
@@ -63,46 +63,6 @@
     {
       "name": "asasadadd",
       "id": 12
-    },
-    {
-      "name": "wowowo",
-      "id": 13
-    },
-    {
-      "name": "sfdscgfdf",
-      "id": 14
-    },
-    {
-      "name": "asdfs",
-      "id": 15
-    },
-    {
-      "name": "sixteenth",
-      "id": 16
-    },
-    {
-      "name": "cvcv",
-      "id": 17
-    },
-    {
-      "name": "edtrtert",
-      "id": 18
-    },
-    {
-      "name": "asdf",
-      "id": 19
-    },
-    {
-      "name": "",
-      "id": 20
-    },
-    {
-      "name": "asdsdsad",
-      "id": 21
-    },
-    {
-      "name": "",
-      "id": 22
     }
   ]
 }

@@ -22,7 +22,7 @@ module.exports = {
         },
 
         async removeLab(parent, {id}) {
-            return await axios.delete(`${dbUrl}/labs/${id}`).then(res => res.data)
+            return await axios.delete(`${dbUrl}/labs/${id}`).then(res => res.data.removeLab)
         }
     }
 }
