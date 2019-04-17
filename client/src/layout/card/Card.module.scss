@@ -1,0 +1,23 @@
+@import 'layout/variables.scss';
+
+.primaryCard {
+    box-sizing: border-box;
+    background-color: #eee;
+    padding: $medium-padding;
+    margin: $small-margin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.lightCard {
+    box-sizing: border-box;
+    background-color: #aaa;
+    padding: $medium-padding;
+    margin: $small-margin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}

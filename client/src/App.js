@@ -1,7 +1,8 @@
 import React from 'react'
-import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Home, Labs } from './pages'
 import { SuccessPage, ErrorPage } from './pages/common'
+import { NavLink } from 'layout'
 
 const App = () => {
   return (

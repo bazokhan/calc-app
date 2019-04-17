@@ -1,8 +1,8 @@
 import React from 'react'
-import {Button} from 'layout'
+import { Card } from 'layout'
 
 const Home = () => {
-    return (<Button typeName="primary">Hello From Home</Button>)
+  return <Card typeName="primary">Hello From Home</Card>
 }
 
 export default Home

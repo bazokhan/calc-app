@@ -1,7 +1,21 @@
+@import 'layout/variables.scss';
+
 .primaryInput {
-    background-color: red;
+    box-sizing: border-box;
+    width: 100%;
+    padding: $medium-padding;
+    background: $gray;
+    margin: $small-margin;
+    border-radius: $small-radius;
+    border: none;
 }
 
 .lightInput {
-    background-color: green;
+    box-sizing: border-box;
+    width: 100%;
+    padding: $medium-padding;
+    background: $white;
+    margin: $small-margin;
+    border-radius: $small-radius;
+    border: none;
 }

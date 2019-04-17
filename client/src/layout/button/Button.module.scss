@@ -1,7 +1,33 @@
+@import 'layout/variables.scss';
+
 .primaryButton {
-    background-color: red;
+    box-sizing: border-box;
+    width: 100%;
+    padding: $medium-padding;
+    margin: $small-margin;
+    background-color: $white;
+    border: none;
+    border-radius: $small-radius;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $gray
+    }
 }
 
 .lightButton {
-    background-color: green;
+    box-sizing: border-box;
+    width: 100%;
+    padding: $medium-padding;
+    margin: $small-margin;
+    background-color: $white;
+    border: none;
+    border-radius: $small-radius;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $gray
+    }
 }
