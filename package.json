@@ -11,7 +11,8 @@
     "dev:server": "env-cmd ./server/.env nodemon server/index.js",
     "client:setup": "cd client && yarn",
     "client:server": "cd client && yarn start",
-    "json:setup": "yarn"
+    "json:setup": "yarn",
+    "deploy:api": "prisma deploy"
   },
   "devDependencies": {
     "env-cmd": "^8.0.2",
